@@ -17,7 +17,7 @@ string enkripsiCaesar(const string teks, int ubah) {
     return ciphertext;
 }
 
-string deskripsiCaesar(const string ciphertext, int ubah) {
+string dekripsiCaesar(const string ciphertext, int ubah) {
     return enkripsiCaesar(ciphertext, 26 - ubah);
 }
 
@@ -31,7 +31,7 @@ int main() {
     enkripsi = enkripsiCaesar(dekripsiKata, ubah);
     cout <<"\nTeks Enkripsi : " << enkripsi;
     
-    dekripsi = deskripsiCaesar(enkripsi, ubah); // Corrected the function name and passed ciphertext
+    dekripsi = dekripsiCaesar(enkripsi, ubah); 
     cout <<"\nTeks Dekripsi : " << dekripsi;
     
     return 0;
